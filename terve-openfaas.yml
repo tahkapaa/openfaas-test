@@ -1,0 +1,10 @@
+provider:
+  name: openfaas
+  gateway: http://localhost:31112
+functions:
+  terve-openfaas:
+    lang: python3
+    handler: ./terve-openfaas
+    image: localhost:5000/terve-openfaas
+    environment:
+      combine_output: false

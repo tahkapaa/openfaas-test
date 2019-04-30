@@ -1,0 +1,8 @@
+provider:
+  name: openfaas
+  gateway: http://localhost:31112
+functions:
+  sentimeter:
+    lang: go
+    handler: ./sentimeter
+    image: localhost:5000/sentimeter:latest
